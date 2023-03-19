@@ -10,9 +10,9 @@
 		<Description>Yet another set of useful extensions methods.</Description>
 		<PackageProjectUrl>https://github.com/hossmi/JimenaTools.Extensions</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<Version>0.0.1</Version>
-		<FileVersion>0.0.1.0</FileVersion>
-		<AssemblyVersion>0.0.1.0</AssemblyVersion>
+		<Version>0.0.2</Version>
+		<FileVersion>0.0.2.0</FileVersion>
+		<AssemblyVersion>0.0.2.0</AssemblyVersion>
 		<PackageTags>IEnumerable,extensions,validations</PackageTags>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
