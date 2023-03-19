@@ -1,5 +1,5 @@
 ﻿using System;
-using JimenaTools.Extensions.Exceptions;
+using JimenaTools.Exceptions;
 
 namespace JimenaTools.Extensions.Validations
 {

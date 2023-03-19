@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using JimenaTools.Extensions.Exceptions;
+using JimenaTools.Exceptions;
 using JimenaTools.Extensions.Validations;
 
 namespace JimenaTools.Extensions.Types

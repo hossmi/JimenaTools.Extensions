@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace JimenaTools.Extensions.Exceptions
+namespace JimenaTools.Exceptions
 {
     public class RequiredStringArgumentException : ArgumentException
     {
