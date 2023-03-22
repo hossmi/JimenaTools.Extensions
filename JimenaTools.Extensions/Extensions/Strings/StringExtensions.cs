@@ -22,7 +22,7 @@ namespace JimenaTools.Extensions.Strings
 
         public static string AsJoinedWith(this IEnumerable<string> chunks, string separator)
         {
-            separator.ShouldBeFilled(nameof(separator));
+            separator.ShouldBeNotNull(nameof(separator));
             return string.Join(separator, chunks);
         }
     }
