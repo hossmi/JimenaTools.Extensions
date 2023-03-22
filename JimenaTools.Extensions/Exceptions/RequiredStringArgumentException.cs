@@ -5,8 +5,11 @@ namespace JimenaTools.Exceptions
 {
     public class RequiredStringArgumentException : ArgumentException
     {
-        public RequiredStringArgumentException(string paramName = null)
-            : base($"{nameof(String)} parameter {paramName ?? ""} cannot be empty.") { }
+        public RequiredStringArgumentException()
+            : base($"{nameof(String)} parameter cannot be null or empty.") { }
+
+        public RequiredStringArgumentException(string paramName)
+            : base($"{nameof(String)} parameter '{paramName}' cannot be empty.") { }
 
         protected RequiredStringArgumentException(SerializationInfo info, StreamingContext context) : base(info, context) { }
     }
