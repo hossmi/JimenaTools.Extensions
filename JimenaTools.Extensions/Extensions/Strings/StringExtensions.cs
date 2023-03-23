@@ -11,10 +11,7 @@ namespace JimenaTools.Extensions.Strings
         /// <summary>
         /// Returns the opposite to <see cref="System.String.IsNullOrWhiteSpace"/>.
         /// </summary>
-        public static bool IsFilled(this string value)
-        {
-            return !string.IsNullOrWhiteSpace(value);
-        }
+        public static bool IsFilled(this string value) => !string.IsNullOrWhiteSpace(value);
 
         /// <summary>
         /// Extension method for fluently call string.Format static method.
