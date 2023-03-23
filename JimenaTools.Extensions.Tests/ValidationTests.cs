@@ -1,14 +1,14 @@
 ﻿using System;
 using FluentAssertions;
-using Xunit;
 using JimenaTools.Extensions.Strings;
+using Xunit;
 
 namespace JimenaTools.Extensions.Tests
 {
     public class ValidationTests
     {
         [Fact]
-        public void AsJoined_allows_NewLine_separator()
+        public void Can_merge_strings_using_NewLine_as_separator()
         {
             string response;
             string[] words;
@@ -20,7 +20,7 @@ namespace JimenaTools.Extensions.Tests
                 "three",
             };
 
-            response = words.AsJoinedWith(Environment.NewLine);
+            response = words.MergedWith(Environment.NewLine);
 
             response.Should().Be(@"One
 two

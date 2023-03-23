@@ -27,7 +27,12 @@ namespace JimenaTools.Extensions.Strings
         /// <summary>
         /// Extension method for fluently call string.Join static method.
         /// </summary>
-        public static string AsJoined(this IEnumerable<string> chunks)
+        [Obsolete("Use Merge extension method in place.")]
+        public static string AsJoined(this IEnumerable<string> chunks) => chunks.Merged();
+
+        [Obsolete("Use 'MergedWith' extension method in place.")]
+        public static string AsJoinedWith(this IEnumerable<string> chunks, string separator) => chunks.MergedWith(separator);
+        public static string Merged(this IEnumerable<string> chunks)
         {
             return string.Join(string.Empty, chunks);
         }
@@ -35,7 +40,7 @@ namespace JimenaTools.Extensions.Strings
         /// <summary>
         /// Extension method for fluently call string.Join static method.
         /// </summary>
-        public static string AsJoinedWith(this IEnumerable<string> chunks, string separator)
+        public static string MergedWith(this IEnumerable<string> chunks, string separator)
         {
             separator.ShouldBeNotNull(nameof(separator));
             return string.Join(separator, chunks);
