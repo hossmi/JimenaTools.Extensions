@@ -4,28 +4,28 @@
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Nullable>disable</Nullable>
 		<LangVersion>8.0</LangVersion>
+
 		<RootNamespace>$(MSBuildProjectName.Split('.')[0])</RootNamespace>
 		<ProduceReferenceAssembly>True</ProduceReferenceAssembly>
 		<Title>$(MSBuildProjectName)</Title>
 		<Description>Yet another set of useful extensions methods.</Description>
 		<PackageProjectUrl>https://github.com/hossmi/JimenaTools.Extensions</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<Version>0.0.3</Version>
-		<FileVersion>0.0.3.0</FileVersion>
-		<AssemblyVersion>0.0.3.0</AssemblyVersion>
+		<Version>0.0.4</Version>
+		<FileVersion>0.0.4.0</FileVersion>
+		<AssemblyVersion>0.0.4.0</AssemblyVersion>
 		<PackageTags>IEnumerable,extensions,validations</PackageTags>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<DebugType>portable</DebugType>
-		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 		<DebugType>none</DebugType>
-		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	</PropertyGroup>
