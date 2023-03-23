@@ -14,6 +14,9 @@ namespace JimenaTools.Extensions.Strings
         /// </summary>
         public static bool IsFilled(this string value) => !string.IsNullOrWhiteSpace(value);
 
+        /// <summary>
+        /// Extension methos for <see cref="String.IsNullOrWhiteSpace(string)"/>.
+        /// </summary>
         public static bool IsNullEmptyOrWhiteSpace(this string value) => string.IsNullOrWhiteSpace(value);
 
         /// <summary>
@@ -30,8 +33,15 @@ namespace JimenaTools.Extensions.Strings
         [Obsolete("Use Merge extension method in place.")]
         public static string AsJoined(this IEnumerable<string> chunks) => chunks.Merged();
 
+        /// <summary>
+        /// Extension method for fluently call string.Join static method.
+        /// </summary>
         [Obsolete("Use 'MergedWith' extension method in place.")]
         public static string AsJoinedWith(this IEnumerable<string> chunks, string separator) => chunks.MergedWith(separator);
+
+        /// <summary>
+        /// Extension method for fluently call string.Join static method.
+        /// </summary>
         public static string Merged(this IEnumerable<string> chunks)
         {
             return string.Join(string.Empty, chunks);
