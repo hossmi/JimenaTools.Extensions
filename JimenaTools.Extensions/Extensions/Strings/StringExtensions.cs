@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using JimenaTools.Extensions.Validations;
 
 namespace JimenaTools.Extensions.Strings
@@ -12,6 +13,8 @@ namespace JimenaTools.Extensions.Strings
         /// Returns the opposite to <see cref="System.String.IsNullOrWhiteSpace"/>.
         /// </summary>
         public static bool IsFilled(this string value) => !string.IsNullOrWhiteSpace(value);
+
+        public static bool IsNullEmptyOrWhiteSpace(this string value) => string.IsNullOrWhiteSpace(value);
 
         /// <summary>
         /// Extension method for fluently call string.Format static method.
